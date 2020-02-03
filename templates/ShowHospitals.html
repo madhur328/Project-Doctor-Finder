@@ -1,0 +1,22 @@
+{% extends 'A1.html' %}
+{% block m1 %}
+{%if kota %}
+    {%for a in kota%}
+        <h3> Hospital Name: {{a[0]}}</h3>
+        <p>
+            speciality: {{a[1]}}
+            address:{{a[2]}}<br/>
+            contact:{{a[3]}}<br/>
+            ac beds:{{a[4]}}<br/>
+            non ac beds:{{a[5]}}<br/>
+            email:{{a[6]}}
+        </p>
+        <form method="post" action="edit_hospital">
+            <input type="hidden" value="{{a[6]}}" name="H1">
+            <input type="submit" value="Edit" name="B1">
+        </form>
+    {%endfor%}
+{%elif jpr%}
+    <h3>{{jpr}}</h3>
+{%endif%}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'A.html' %}
+{% block m1 %}
+<h1>Welcome to Hospital Home Email: {{ e1 }}</h1>
+{% if photo=='no' %}
+    <p><a href="hospitalphoto">Upload Photo</a> </p>
+{% else %}
+    <img src="../static/photos/{{ photo }}" width="100" height="100" />
+    <br/>
+    <p><a href="change_hospitalphoto">Change Photo</a> </p>
+{% endif %}
+<h1> Hospital Block </h1>
+<p><a href="hospital_profile">Profile</a> </p>
+<p><a href="change_password_hospital">Change password</a> </p>
+<p><a href="doctor_reg">New Doctor</a> </p>
+<p><a href="show_doctors">Show Doctors</a> </p>
+<p><a href="edit_doctors">Edit Doctors</a> </p>
+<p><a href="delete_doctors">Delete Doctors</a> </p>
+<p><a href="logout">Logout</a> </p>
+{% endblock %}

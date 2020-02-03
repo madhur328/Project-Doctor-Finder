@@ -1,0 +1,17 @@
+{% extends 'A.html' %}
+{% block m1 %}
+{% if msg %}
+<h2>{{msg}}</h2>
+{% endif %}
+{% if data %}
+ <form method="post" action="edit_doctor1">
+     Name: <input type="text" name="T1" value="{{a[0]}}"/>
+     Speciality: <input type="text" name="T2" value="{{a[1]}}"/>
+     Timing: <input type="text" name="T3" value="{{a[2]}}"/>
+     Experience: <input type="text" name="T4" value="{{a[3]}}"/>
+     <input type="submit" value="Save Changes"/>
+ </form>
+
+
+
+{% endblock %}

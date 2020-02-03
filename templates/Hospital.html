@@ -1,0 +1,17 @@
+{% extends 'A.html' %}
+{% block m1 %}
+{% if Kota %}
+    {%for a in Kota%}
+        <h3>Hospital Name:{{a[0]}}</h3>
+        <p>Speciality: {{a[1]}} <br/>
+            Address: {{a[2]}}<br/>
+            Contact: {{a[3]}}<br/>
+            A\C beds: {{a[4]}}<br/>
+            non-A\C beds:{{a[5]}}<br/>
+            email:{{a[6]}}
+        </p>
+    {%endfor%}
+{% elif jpr %}
+<h3>{{jpr}}</h3>
+{% endif%}
+{% endblock %}

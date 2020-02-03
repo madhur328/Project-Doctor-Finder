@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Hospital </title>
+<link href="../static/css/A1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+   <div class="wrapper">
+      <div class="header">
+      <img src="../static/images/A1.jpg" height="200px" width="100%">
+      </div>
+      <div class="menu">
+      <ul>
+      <li><a href="adminhome">HOME</a></li>
+      <li><a href="admin_reg">NEW ADMIN</a></li>
+      <li><a href="hospital_reg">NEW HOSPITALS</a></li>
+      <li><a href="show_admins">ADMINS</a></li>
+      <li><a href="show_hospitals">HOSPITALS</a></li>
+      <li><a href="change_password_admin">CHANGE PASSWORD</a></li>
+      <li><a href="logout">LOGOUT</a></li>
+      
+      </ul>
+      </div>
+      <div class="middle">
+         <div class="content1">
+
+            {% block m1 %}
+            {% endblock %}
+         </div>
+         <div class="content2">
+         </div>
+      </div>
+      <div class="footer">
+      <h1>copy right &copy;by hospital 2019</h1>
+      </div>
+   </div>
+</div>
+</body>
+</html>

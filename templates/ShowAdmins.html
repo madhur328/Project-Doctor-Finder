@@ -1,0 +1,18 @@
+{% extends 'A1.html' %}
+{% block m1 %}
+<h1>Admins</h1>
+{% if Kota %}
+    {% for a in Kota %}
+        <h3>Name:{{a[0]}}</h3>
+        <p>
+            Address:{{a[1]}}<br/>
+            contact:{{a[2]}}<br/>
+            email:{{a[3]}}
+        </p>
+    {%endfor%}
+{%elif jpr%}
+    <h3>
+        {{jpr}}
+    </h3>
+{%endif%}
+{% endblock %}

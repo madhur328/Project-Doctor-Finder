@@ -1,0 +1,26 @@
+{% extends 'A.html' %}
+{% block m1 %}
+<form method="post" action="doctor_reg">
+    <p>
+        Name: <input type="text" name="T1"/>
+    </p>
+    <p>
+        Speciality <input type="text" name="T2"/>
+    </p>
+    <p>
+        Timing <input type="text" name="T3"/>
+    </p>
+    <p>
+        Experience <input type="text" name="T4"/>
+    </p>
+    <p>
+         <input type="submit" value="Register" name="B1"/>
+    </p>
+
+</form>
+
+{% if msg %}
+    {{msg}}
+<a href="hospital_home"></a>
+{% endif %}
+{% endblock %}

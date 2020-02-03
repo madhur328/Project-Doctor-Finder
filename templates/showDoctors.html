@@ -1,0 +1,29 @@
+{% extends 'A.html' %}
+{% block m1 %}
+<h1>Doctors</h1>
+{% if Kota %}
+    {% for a in Kota %}
+        <h3>Name:{{a[0]}}</h3>
+        <p>
+            Speciality:{{a[1]}}<br/>
+            Timing:{{a[2]}}<br/>
+            Experience:{{a[3]}}
+        </p>
+    <form method="post" action="edit_doctor">
+        <input type="hidden" value="{{a[0]}}" name="T1"/>
+        <input type="hidden" value="{{a[1]}}" name="T2"/>
+        <input type="submit" value="edit doctor"/>
+    </form>
+    <form method="post" action="delete_doctor">
+        <input type="hidden" value="{{a[0]}}" name="T1"/>
+        <input type="hidden" value="{{a[1]}}" name="T2"/>
+        <input type="submit" value="delete doctor"/>
+    </form>
+
+    {%endfor%}
+{%elif jpr%}
+    <h3>
+        {{jpr}}
+    </h3>
+{%endif%}
+{% endblock %}
