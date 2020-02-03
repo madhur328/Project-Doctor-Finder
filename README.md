@@ -7,11 +7,13 @@ Steps to run this project:
 1) Download all files
 2) Open Command prompt and navigate to the folder containing all the files
 3) Write the following commands: 
-     pip install virtualenv
-     virtualenv env
-     env\scripts\activate
-     pip install flask
-     pip install pymysql
+    ```
+    pip install virtualenv
+    virtualenv env
+    env\scripts\activate
+    pip install flask
+    pip install pymysql
+    ```
 4) Install mysql and create a test database as the program specifies for testing purposes
 5) Install pycharm
 6) Open the project in pycharm, wait for it to finish indexing
