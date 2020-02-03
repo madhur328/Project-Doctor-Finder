@@ -1,0 +1,14 @@
+<h1>Admins</h1>
+
+{% if kota %}
+    {% for a in kota %}
+        <h3>Name : {{ a[0] }}</h3>
+        <p>
+            Address : {{ a[1] }} <br/>
+            Contact : {{ a[2] }} <br/>
+            Email : {{ a[3] }}
+        </p>
+    {% endfor %}
+{% elif jpr %}
+    <h3>{{ jpr }}</h3>
+{% endif %}
